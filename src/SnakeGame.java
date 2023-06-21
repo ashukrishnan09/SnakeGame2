@@ -1,0 +1,19 @@
+import javax.swing.*;
+
+public class SnakeGame extends JFrame {
+    Board board;
+
+    SnakeGame(){
+        board = new Board();
+        add(board);
+        setVisible(true);
+        pack();
+        setResizable(false);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        //initialize snake game
+        SnakeGame snakeGame = new SnakeGame();
+    }
+}
